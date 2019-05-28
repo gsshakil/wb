@@ -12,6 +12,7 @@ import {
  import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
  import About from '../pages/About';
+ import LandingPage from '../pages/LandingPage';
  import CityPage from '../pages/CityPage';
  import MyWeatherPage from '../pages/MyWeatherPage';
 
@@ -40,7 +41,7 @@ export default class NavBar extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <Link to="/">Cities</Link>
+                  <Link to="/cities">Cities</Link>
                 </NavItem>
                 <NavItem>
                   <Link to="/myweather/">My Wather</Link>
@@ -52,7 +53,8 @@ export default class NavBar extends React.Component {
             </Collapse>
           </Navbar>
 
-          <Route path="/" exact component={CityPage} />
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/cities" exact component={CityPage} />
           <Route path="/myweather" component={MyWeatherPage} />
           <Route path="/about/" component={About} />
         </Router>
