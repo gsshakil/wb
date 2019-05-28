@@ -1,9 +1,54 @@
+body{
+  background: #ef981a;
+}
+
+.navbar{
+  height: 60px;
+}
+
+.navbar .brand{
+  color: #ef981a;
+  font-size: 24px;
+}
+
 .navbar a{
-  color: #ddd !important;
+  color: #ddd;
+  margin-right: 15px;
+  transition: .3s;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+  color: #ef981a;
 }
 
 .cityList{
   width: 100%;
-  border-radius: 0;
+  border-radius: 0 !important;
   margin-bottom: 1px;
+}
+
+.cover{
+  position: absolute;
+  top: 25vh;
+}
+
+.my-weather{
+  background: #ef981a;
+  color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.my-weather .inner{
+  text-align: center;
+  margin-top: 150px;
+}
+
+.landing-page{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ef981a;
 }

@@ -23,7 +23,7 @@ class City extends React.Component {
 
   componentDidMount() {
     const APP_ID = "86254bff569adb47c62600be0abf0b9e";
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=${APP_ID}`)
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Chittagong&appid=${APP_ID}`)
       .then(res => {
         const response = res.data;
         this.setState({ 
@@ -54,7 +54,7 @@ class City extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="city-list">
         <Form inline onSubmit={(e) => e.preventDefault()}> 
           <Button className="cityList" onClick={this.toggle} key={this.props.id}>{this.props.children}</Button>
         </Form>

@@ -3,10 +3,8 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
+  NavItem
  } from 'reactstrap';
 
  import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -36,7 +34,7 @@ export default class NavBar extends React.Component {
       <div>
         <Router>
           <Navbar color="dark" light expand="md">
-            <Link to="/">Weather Buddy</Link>
+            <Link className="brand" to="/">Weather Buddy</Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
