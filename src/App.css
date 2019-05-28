@@ -1,0 +1,9 @@
+.navbar a{
+  color: #ddd !important;
+}
+
+.cityList{
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 1px;
+}
