@@ -1,9 +1,10 @@
 import React from 'react';
 import UniqueID from 'react-html-id';
-
-import City from './City';
+import { Link } from "react-router-dom";
 
 import { ListGroup } from 'reactstrap';
+
+
 
 export default class CityList extends React.Component {
 
@@ -25,14 +26,17 @@ export default class CityList extends React.Component {
   }
 
   render() {
-    return (
-      <ListGroup>   
-        {
-            this.state.cities.map((city) =>{
-               return(<City id={city.id}>{city.name}</City>) 
+    return(  
+        this.state.cities.map((city) =>{
+          return(
+              <ListGroup className="cityList">   
+                  <Link to={'/weather/'+ city.name}>
+                      {city.name}
+                  </Link>
+              </ListGroup>
+              ); 
             })
-        }
-      </ListGroup>
-    );
+          )
+      }
   }
-}
+

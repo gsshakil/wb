@@ -13,6 +13,7 @@ import {
  import LandingPage from '../pages/LandingPage';
  import CityPage from '../pages/CityPage';
  import MyWeatherPage from '../pages/MyWeatherPage';
+ import Weather from '../pages/Weather';
 
   
 export default class NavBar extends React.Component {
@@ -42,7 +43,7 @@ export default class NavBar extends React.Component {
                   <Link to="/cities">Cities</Link>
                 </NavItem>
                 <NavItem>
-                  <Link to="/myweather/">My Wather</Link>
+                  <Link to="/myweather/">My Weather</Link>
                 </NavItem>
                 <NavItem>
                   <Link to="/about/">About</Link>
@@ -55,6 +56,8 @@ export default class NavBar extends React.Component {
           <Route path="/cities" exact component={CityPage} />
           <Route path="/myweather" component={MyWeatherPage} />
           <Route path="/about/" component={About} />
+          <Route path="/weather/:name" component={Weather} />
+
         </Router>
 
       </div>

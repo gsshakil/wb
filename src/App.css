@@ -22,10 +22,28 @@ body{
   color: #ef981a;
 }
 
+
 .cityList{
+  text-align: center;
+}
+
+.cityList a{
   width: 100%;
   border-radius: 0 !important;
-  margin-bottom: 1px;
+  margin-bottom: -1px;
+  padding: 30px;
+  display: block;
+  background-color: #ef981a !important;
+  color: #fff !important;
+  border: 1px solid #333 !important;
+  opacity: 1;
+  text-decoration: none;
+  transition: .7s;
+}
+
+.cityList a:hover{
+  opacity: .9;
+  text-decoration: none;
 }
 
 .cover{
@@ -51,4 +69,23 @@ body{
   height: 100%;
   width: 100%;
   background-color: #ef981a;
+  text-align: center;
+}
+
+.landing-page .inner{
+  margin-top: 15vh;
+}
+
+.landing-page .inner button{
+  width: 250px;
+}
+
+.landing-page .inner img{
+  width: 300px;
+}
+
+.test-link{
+  padding: 50px;
+  font-size: 50px;
+  z-index: 999;
 }

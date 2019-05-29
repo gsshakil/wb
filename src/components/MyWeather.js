@@ -14,11 +14,7 @@ class MyWeather extends React.Component{
     
         this.getMyLocation = this.getMyLocation.bind(this)
       }
-      
-      componentDidMount() {
-        this.getMyLocation()
-      }
-    
+
       getMyLocation() {
         const location = window.navigator && window.navigator.geolocation
         

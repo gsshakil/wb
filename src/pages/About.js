@@ -9,7 +9,7 @@ function About() {
                     <h1 class="cover-heading">About</h1>
                     <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eum repellat aliquid quis quasi quia odit, possimus vel numquam, amet placeat unde minima modi tenetur cupiditate excepturi at beatae non.</p>
                     <p class="lead">
-                    <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+                    <a href="/" class="btn btn-lg btn-secondary">Learn more</a>
                     </p>
                 </main>
             </div>
