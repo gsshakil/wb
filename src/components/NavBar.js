@@ -57,7 +57,6 @@ export default class NavBar extends React.Component {
           <Route path="/myweather" component={MyWeatherPage} />
           <Route path="/about/" component={About} />
           <Route path="/weather/:name" component={Weather} />
-
         </Router>
 
       </div>

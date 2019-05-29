@@ -1,11 +1,16 @@
 {
   "name": "weatherbuddy",
   "version": "0.1.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.0"
+  },
   "private": true,
   "dependencies": {
     "@types/react": "^16.8.18",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
     "history": "^4.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -17,10 +22,11 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "react-scripts build -p"
   },
   "eslintConfig": {
     "extends": "react-app"
